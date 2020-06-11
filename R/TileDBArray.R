@@ -63,7 +63,9 @@
 #'
 #' # Apply typical DelayedArray operations:
 #' as.matrix(B[1:10,1:10])
+#' if (require("BiocParallel")) {
 #' B %*% runif(ncol(B))
+#' }
 #'
 #' @name TileDBArray
 NULL

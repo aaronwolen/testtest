@@ -88,7 +88,8 @@ out * 2
 
 We can also do more complex matrix operations that are supported by `r Biocpkg("DelayedArray")`:
 
-```{r}
+```{r eval=requireNamespace("BiocParallel", quietly = TRUE)}
+# requires BiocParallel
 colSums(out)
 out %*% runif(ncol(out))
 ```

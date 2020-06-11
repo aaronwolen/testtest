@@ -59,6 +59,7 @@ test_that("matrix subset extraction works correctly ", {
 })
 
 test_that("more complex matrix operations work correctly", {
+    skip_if_not_installed("BiocParallel")
     for (x in seq_along(tdb)) {
         r <- ref[[x]]
         t <- tdb[[x]]
