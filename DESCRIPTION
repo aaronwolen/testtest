@@ -23,6 +23,7 @@ Suggests:
     BiocParallel,
     testthat,
     Matrix
+Remotes: github::tiledb-inc/tiledb-r
 VignetteBuilder: knitr
 BugReports: https://github.com/LTLA/TileDBArray
 URL: https://github.com/LTLA/TileDBArray
